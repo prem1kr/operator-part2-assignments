@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1,2,3,4,5</title>
+</head>
+<body style="padding: 1%;">
+    <h2>Q1. Explain the usage of ternary operator with syntax and write a program to check whether the number is even
+        or odd using the ternary operator.</h2>
+    <h3>Usage of the Ternary Operator in JavaScript :- <h3>
+      <h4 style="color: blue;" >  The ternary operator in JavaScript is a concise way to perform conditional operations. It is also known as the conditional operator. The ternary operator takes three operands, hence the name "ternary." It is often used as a shortcut for simple if-else statements.
+      <li>  Syntax:- condition ? expressionIfTrue : expressionIfFalse; </li>
+      <br>
+     <li> condition: This is the condition to be evaluated. If the condition is true, the operator returns the value of expressionIfTrue; otherwise, it returns the value of expressionIfFalse. </li>
+<li> expressionIfTrue: This is the expression that gets executed if the condition is true. </li>
+<li> expressionIfFalse: This is the expression that gets executed if the condition is false. </li>
+<br>
+<li>Example:- <br>
+    let number = 7;
+    <br>
+
+    let result = (number % 2 === 0) ? "Even" : "Odd";
+    <br>
+    
+    console.log(`The number ${number} is ${result}.`);</li>
+
+    <br>
+  Explain:-
+ <li>This checks whether the remainder when number is divided by 2 is zero. If true, the number is even; if false, the number is odd. </li>
+      </h4>
+
+      <h2>Q2.Describe the usage of the comma operator in JavaScript and provide an example.</h2>
+     <h3> Usage of the Comma Operator in JavaScript :- </h3>
+      <h4 style="color: blue;">
+        The comma operator in JavaScript is used to evaluate multiple expressions in a single statement, with the final expression's result being returned. When using the comma operator, each expression is evaluated from left to right, but only the value of the last expression is returned.
+        <br>
+        Syntax :- expression1, expression2, expression3, ... , expressionN
+        <br>
+
+       Explain:-
+        <li>expression1, expression2, ..., expressionN: These are the expressions to be evaluated. Each expression is evaluated in order, but only the result of the last expression (expressionN) is returned.</li>
+        <br>
+        Example :-
+        <br>
+        let x, y, z;
+        <br>
+        x = (y = 10, z = 20);
+        <br>
+        console.log(x); // Output: 20
+        <br>
+        console.log(y); // Output: 10
+        <br>
+        console.log(z); // Output: 20
+        <br>
+        <li>In this example, y is assigned 10, z is assigned 20, and the value of z (20) is assigned to x.</li>
+      </h4>
+ <h2>Q3. Use a nested ternary operator to check that a number is positive, negative or zero. You have to print
+    “positive” if the number is positive and similarly for negative and zero also.</h2>
+    <h3>Using Nested Ternary Operator to Check if a Number is Positive, Negative, or Zero in JavaScript :-</h3>
+    <h4 style="color: blue;">
+
+        The ternary operator in JavaScript provides a concise way to perform conditional checks and execute expressions based on those conditions. A nested ternary operator is when one ternary operator is used inside another, allowing for multiple conditions to be evaluated sequentially.
+<br> 
+Ternary Operator Syntax:- condition ? expressionIfTrue : expressionIfFalse;
+
+<br>
+Explain:- 
+<li>condition: The condition to evaluate. </li>
+   <li> expressionIfTrue: Executed if the condition is true. </li>
+  <li>  expressionIfFalse: Executed if the condition is false.</li>
+  <br>
+  Example :- 
+  <br>
+  let numbers = 10;
+  <br>
+  let numbers1=-1;
+  <br>
+  let numbers2=0;
+  <br>
+  let results = (numbers > 0) 
+      ? "positive" 
+      : (numbers < 0) 
+          ? "negative" 
+          : "zero";
+          <br>
+  
+          let results1 = (numbers1 > 0) 
+      ? "positive" 
+      : (numbers1 <0) 
+          ? "negative" 
+          : "zero";
+          
+          <br>
+  
+          let results2 = (numbers2 > 0) 
+      ? "positive" 
+      : (numbers2 < 0) 
+          ? "negative" 
+          : "zero";
+  
+          <br>
+  
+  console.log(`The number ${numbers} is ${results}.`);
+  <br>
+  console.log(`The number ${numbers1} is ${results1}.`);
+  <br>
+  console.log(`The number ${numbers2} is ${results2}.`);
+<br>
+
+Explanation of the Code :-
+<li>declare a variable number and assign it the value 10 ,-1 ,0. We can change this value to test different cases.</li>
+<li>First Condition: (number > 0)
+    Checks if the number is greater than zero.
+    If true, result is assigned "positive".
+    If false, it moves to the next condition.</li>
+    <li>Second Condition: (number < 0)
+        Checks if the number is less than zero.
+        If true, result is assigned "negative".
+        If false, result is assigned "zero".</li>
+    </h4>
+
+    <h2>Q4. Use a ternary operator to check that a person is eligible to vote or not by checking his age. If the age of the
+        person is less than 18 then “You cannot vote” should be logged else “You can vote” should be logged.</h2>
+
+        Example:-
+        <h4 style="color: rgb(26, 68, 68);">
+            let age1, age2, age3;
+            <br>
+            age1=17;
+            <br>
+            age2=20;
+            <br>
+            let vote = (age1 > 18) 
+                ? "you can vote" 
+                : (age1 < 18) 
+                    ? "you can't vote" 
+                    :(age1=0) ? "invalid" :"none";
+
+                    <br>
+            
+                    let vote1 = (age2 > 18) 
+                ? "you can vote" 
+                : (age2 < 18) 
+                    ? "you can't vote" 
+                    : (age2=0) ? "invalid" :"none";
+                    <br>
+                    console.log(`The number ${age1} is ${vote}.`);
+                    <br>
+                    console.log(`The number ${age2} is ${vote1}.`);
+                <br>
+                <br>
+                Explanation of code:- 
+                <li>Condition:- (age>18) :- this checks if the person's age is greater then 18.
+             if true then ternary operator returns "You can vote". 
+
+ 
+</li>
+                <li>Condition: (age < 18):- 
+                    This checks if the person's age is less than 18.
+                    If true (the person is younger than 18), the ternary operator returns "You cannot vote".
+            </h4>
+        <script src="Question4.js"></script>
+    <script src="Question3.js"></script>
+      <script src="Question2.js"></script>
+      <script src="Question1.js"></script>
+</body>
+</html>
